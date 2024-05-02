@@ -65,6 +65,9 @@ def update_sales_worksheet(data):
     print("Sales worksheet updated successfully.\n")
 
 
+#Below returns the list of entries as a string.
 data = get_sales_data()
+#Below turns the above list in the data variable to a number
 sales_data = [int(num) for num in data]
+#Below uses the above variable to pass through the below function
 update_sales_worksheet(sales_data)
